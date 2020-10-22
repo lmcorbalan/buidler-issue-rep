@@ -1,0 +1,16 @@
+{
+  "name": "buidler-issue-rep",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start:ganache": "docker-compose up",
+    "build": "npm explore buidler-issue-contracts -- npm run deploy",
+    "test": "npm run build && node index.js"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "buidler-issue-contracts": "github:lmcorbalan/buidler-issue-contracts"
+  }
+}
